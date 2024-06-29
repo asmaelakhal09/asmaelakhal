@@ -37,6 +37,131 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
+    .hero-header
+        {
+            background-image:url('img/thumb.jpg');
+            background-size:cover;
+            height: 300px;
+        }
+        .demarche 
+        {
+            background-image:url('img/thumb.jpg');
+            background-size:cover;
+            background-attachment:fixed;
+        }
+        .nnn 
+        {
+           background-color:white;
+        }
+        .b 
+        {
+            text-align:center;
+           
+        }
+        .btn
+        {
+          width:100%;
+          background-color:blue;
+          color:white;
+          font-weight:bolder;
+        }
+       .v 
+       {
+        background-color:rgb(218, 218, 240);
+       }
+       .n
+        {
+            background-color: #ffc109 !important;
+            height: 200px;
+        }
+        
+.nav {
+    width: 95%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-grow: 0.3;
+    height: 57px ;
+}
+.nav .state {
+    height: 57px ;
+
+}
+.nav .state button {
+    width: 120px;
+    height: 35px;
+    font-weight: bold;
+    margin: 0px 7px;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.nav .state button:nth-child(1) {
+  
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+}
+.nav .state button:nth-child(2) {
+  
+    background-color: black;
+    color: white;
+}
+.nav  .logo {
+    padding-bottom:10px
+}
+.nav  .logo img {
+    width: 53px;
+    height: 64px;
+    position:reltive;
+    bottom:5px
+}
+
+
+.nav ul li span {
+    color:black ;
+    font-weight:bold ;
+    width:100%;
+    height:100%
+}
+
+.nav ul li {
+    flex-grow: 0.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: 70px;
+    height: 100%;
+    border-radius: 8px;   
+}
+
+
+.nav ul li:hover {
+    background-color: rgb(240, 240, 240) ;
+    color: black;
+    cursor: pointer;
+}
+
+
+.nav .state  button:nth-child(1):hover{
+    background-color: rgb(242, 238, 238);
+    color: black;
+}
+
         .hero-header
         {
             background-image:url('img/thumb.jpg');
@@ -49,43 +174,24 @@
             background-size:cover;
             background-attachment:fixed;
         }
-        .nnn 
-        {
-           background-color: white;
-        }
-        .b 
-        {
-            text-align:center;
-           
-        }
-        .f 
-        {
-          position: relative;
-          top: -40px;
-        }
-        .s 
-        {
-          font-weight:bolder;
-        }
-        .btn
-        {
-          width: 100%;
-        }
-        .n
-        {
-            background-color: #ffc106 !important;
-            height: 200px;
-        }
+        .para {
+    width: 200px;
+    margin: auto;
+    background-color: rgb(218, 132, 132);
+}
+ul li span a {
+    color: black !important;
+    width:100%;
+    height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none !important;
+  
+} 
+     
       
-    @media (min-width: 1400px) {
-
-      .xx
-    {
-      position:relative;
-      left: -200px;
-      color:black;
-    }
-    }
+ 
 
        
     </style>
@@ -103,30 +209,21 @@
 
 
     <!-- Navbar Start -->
-    <nav id="bar" class="navbar navbar-expand-lg nnn navbar-light  sticky-top p-0 px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="../Site/Logo CRO_0 (1).png" alt="" style="width: 60px;"></h2>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.php" class="nav-item nav-link xx ">Acceuil</a>
-                <a href="about.php" class="nav-item nav-link xx">Apropos</a>
-                <a href="offre.php" class="nav-item nav-link xx">Offres</a>
-                <a href="inscription.php" class="nav-item nav-link xx">S'inscrire</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Connexion</a>
-                    <div class="dropdown-menu shadow-sm m-0">
-                        <a href="connexion.php" class="dropdown-item active">Candidat</a>
-                        <a href="connexionAdmin.php" class="dropdown-item">Adminisrtateur</a>
-                    </div>
-                </div>
+    <?php 
+
+$page="connexion"
+
+
+?>
+
+
+<?php include 'navbar.php'; ?>
+
+      
                 <!-- <a href="contact.php" class="nav-item nav-link">Contact</a> -->
-            </div>
         </div>
-    </nav>
+    </div>
+  
     <!-- Navbar End -->
 
 
@@ -223,45 +320,7 @@ var header=document.getElementById('bar');
     <!-- debut formulaure -->
 
     <!-- Footer Start -->
-    <section id="map" class="pb-5 mt-10">
-        <div class="container-fluid">
-          <div class="row n">
-            <div class="col-md-6 col-sm-6 p-0 m-0 color-div">
-              <div class="contact-region-principal">
-                <img class="contact-logo"  src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 17.png" alt="">
-               
-      
-                 <p class="text-dark">Région de l’Oriental</p>
-              </div>
-              <ul class="padding-ltr list-style-none">
-                <li  class="contact-adress">
-                  <img class="contact-img-right" src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 18.png" alt="">
-                  <p class="adresse-region text-dark">Boulevard Son Altesse Royale Le Prince Héritier Moulay El Hassan - Oujda
-                </p>
-                </li>
-                <li  class="contact-adress">
-                  <img class="contact-img-right" src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 19.png" alt="">
-                  <p class="adresse-region text-dark">00212536524300</p>
-                </li>
-                <!-- <li  class="contact-adress">
-                  <img class="contact-img-right" src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 20.png" alt="">
-                  <p class="adresse-region"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cfff3f2e8fdffe8dcfff3f2eff9f5f0eef9fbf5f3f2f3eef5f9f2e8fdf0b2f1fd">[email&#160;protected]</a></p>
-                </li> -->
-              </ul>
-            </div>
-            <div class="col-md-6 col-sm-6 p-0 m-0">
-              
-        <div>
-                        <div>  <iframe width="100%" height="198px" title="" frameborder="0" style="border:0" src="https://maps.google.com/maps?hl=en&amp;q=conseil+regional+de+l%27oriental&amp;t=m&amp;z=17&amp;output=embed"></iframe>
-      </div>
-                    </div>
-          
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      <p class="text-center text-dark">© 2023 Conseil Régional de l'Oriental. Tous droits réservés.</p>
+    
       
     <!-- Footer End -->
 

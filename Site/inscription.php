@@ -188,20 +188,16 @@ ul li span a {
 
 
     <!-- Navbar Start -->
-    <div class="nav">
-        <div class="logo"><img src="./Logo CRO_0 (1).png" alt=""></div>
-        <ul id="nav-menu">
-            <li><span><a href="#accueil">Accueil</a></span></li>
-            <li><span><a href="#propos">A propos</a></span></li>
-            <li><span><a href="theOffers.php">Offers</a></span></li>
-            <li><span><a href="#contact">Contacts</a></span></li>
-        </ul>
+    <?php 
 
-        <div class="state">
-            <button><a href="inscription.php">s'inscrire</a></button>
-            <button>se connecter</button>
-        </div>
-    </div>
+$page="inscription"
+
+
+?>
+
+
+<?php include 'navbar.php'; ?>
+
     <!-- Navbar End -->
 
 
@@ -238,7 +234,7 @@ ul li span a {
           }
         ?>
       </div>
-      <form class="p-3" id="registrationForm" action="" method="POST" onsubmit="return validatePasswords()">
+      <form class="p-3" id="registrationForm" action="confirmInscription.php" method="POST" onsubmit="return validatePasswords()">
         <div class="row">
           <div class="col-lg-12">
             <div class="bg-white shadow border  p-4">
@@ -448,48 +444,7 @@ function validatePasswords() {
 
     </script>
 
-     <!-- Footer Start -->
-     <section id="map" class="pb-5 mt-10">
-        <div class="container-fluid">
-          <div class="row n">
-            <div class="col-md-6 col-sm-6 p-0 m-0 color-div">
-              <div class="contact-region-principal">
-                <img class="contact-logo"  src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 17.png" alt="">
-               
-      
-                 <p class="text-dark"> Région de l’Oriental</p>
-              </div>
-              <ul class="padding-ltr list-style-none">
-                <li  class="contact-adress">
-                  <img class="contact-img-right" src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 18.png" alt="">
-                  <p class="adresse-region text-dark">Boulevard Son Altesse Royale Le Prince Héritier Moulay El Hassan - Oujda
-                </p>
-                </li>
-                <li  class="contact-adress">
-                  <img class="contact-img-right" src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 19.png" alt="">
-                  <p class="adresse-region text-dark">00212536524300</p>
-                </li>
-                <!-- <li  class="contact-adress">
-                  <img class="contact-img-right" src="https://conseilregionoriental.ma/themes/custom/cr_theme/assets/images/logoContact/Fichier 20.png" alt="">
-                  <p class="adresse-region"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cfff3f2e8fdffe8dcfff3f2eff9f5f0eef9fbf5f3f2f3eef5f9f2e8fdf0b2f1fd">[email&#160;protected]</a></p>
-                </li> -->
-              </ul>
-            </div>
-            <div class="col-md-6 col-sm-6 p-0 m-0">
-              
-                 <div>
-                        <div>  <iframe width="100%" height="198px" title="" frameborder="0" style="border:0" src="https://maps.google.com/maps?hl=en&amp;q=conseil+regional+de+l%27oriental&amp;t=m&amp;z=17&amp;output=embed"></iframe>
-                 </div>
-                </div>
-          
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      <p class="text-center text-dark">© 2023 Conseil Régional de l'Oriental. Tous droits réservés.</p>
-      
-    <!-- Footer End -->
+  
     
 
 

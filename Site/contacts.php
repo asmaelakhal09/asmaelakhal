@@ -41,206 +41,80 @@
             margin:0;
             color:black
         }
-.nav {
-    width: 95%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    margin-top: 5px;
-}
+        .contact {
+            width: 80%;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-around;
+            margin:auto;
+            margin-bottom:30px
+        }
+        .inputs {
+            display:flex;
+            flex-direction:column;
+            justify-content:space-around;
+            height:500px
+        }
+        .field {
+            width:380px;
+            position:relative;
+            margin-left:250px
+        }
+        .field input {
+            padding:10px;
+            width:450px;
+            border:1px solid ; 
 
+        }
+        .field  i {
+            font-size:25px;
+            margin-left:15px;
+            position:absolute;
+            right:-14%;
+            top: 59%;
 
-.nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    flex-grow: 0.3;
-    height: 57px ;
-}
-.nav .state {
-    height: 57px ;
+        }
+        .field textarea {
+            width:450px;
+            height:100px;
+            position: relative;
+            margin-bottom:20px;
+            border:1px solid ; 
 
-}
-.nav .state button {
-    width: 120px;
-    height: 35px;
-    font-weight: bold;
-    margin: 0px 7px;
-    border: 0px;
-    border-radius: 8px;
-}
+        }
+        .message i {
+            position: absolute;
+            top: 50px;
+        }
+        .inputs .field:nth-child(4) input {
+            background-color:#e1e1e1;
+            border:0px;
+        }
+        .inputs .field:nth-child(4) input:hover {
+            background-color:beige;
 
-.nav .state button:nth-child(1) {
-  
-    background-color: white;
-    color: black;
-    border: 2px solid gray;
-}
-.nav .state button:nth-child(2) {
-  
-    background-color: black;
-    color: white;
-}
-.nav  .logo {
-    padding-bottom:10px
-}
-.nav  .logo img {
-    width: 53px;
-    height: 64px;
-    position:reltive;
-    bottom:5px
-}
-
-
-.nav ul li span {
-    color:black ;
-    font-weight:bold ;
-    width:100%;
-    height100%;
-}
-
-.nav ul li {
-    flex-grow: 0.5;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4px;
-    width: 70px;
-    height: 100%;
-    border-radius: 8px;   
-}
-
-.nav ul li:hover {
-    background-color: rgb(240, 240, 240) ;
-    color: black;
-    cursor: pointer;
-}
-
-
-.nav .state  button:nth-child(1):hover{
-    background-color: rgb(242, 238, 238);
-    color: black;
-}
-
-.para {
-    width: 200px;
-    margin: auto;
-    background-color: rgb(218, 132, 132);
-}
-        
-ul li span a {
-    color: black !important;
-    width:100%;
-    height:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-decoration:none !important;
-  
-}
-
-.context {
-    width: 70%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:black;
-    margin:auto;
-    position: relative;
-    top:30px;
-    border-radius:10px
-
-}
-
-
-.context .icon .fa-solid {
-    font-size:399px;
-    color:white
-}
-
-.context .icon {
-    display:flex;
-    justify-content:flex-end;
-    align-items :center;
-    flex-grow:0.3;
-}
-.context .form {
-    display:flex;
-    flex-direction:column;
-    justofy-content:space-around;
-    aign-items:center;
-    height:70%;
-    flex-grow:0.2;
-    position:relative
-
-}
-.context .form p {
-    color:white;
-    margin-top:15px
-}
-.context .form input {
-    height:50px;
-    border-radius:8px;
-    padding:10px 15px ;
-
-}
-.context .form .fa-message {
-    position: absolute;
-    left:410px;
-    top:362px;
-    font-size:30px
-}
-.context .form .fa-user {
-    position: absolute;
-    left:410px;
-    top:169px;
-    font-size:30px
-}
-.context .form i:nth-child(3) {
-    position: absolute;
-    left:410px;
-    top:68px;
-    font-size:30px
-}
-.context .form textarea {
-    height: 130px;
-    padding:10px 15px ;
-}
-.context .form button  {
-    width:150px;
-    background: white;
-    border: 0px;
-    padding:10px;
-    color:block;
-    margin-top:15px
-    
-}
-
+        }
     </style>
 
 </head>
 <body>
         <!--navbar-->
 
-        <h3 class="title">Contact</h3>
+        <div class="contact">
+            <div class="contact-title">
+                <h2 class="">Contact Us</h2>
+            </div>
+            <div class="inputs">
+                <div class="field"><p>Email</p><input type="text" placeholder="Enter Your Email"> <i class="fa-regular fa-envelope"></i></div>
+                <div class="field"><p>Phone Number</p><input type="text" placeholder="Enter Your Phone Number"><i class="fa-solid fa-phone"></i></div>
 
-<div class="context">
-<div class="form">
-    <p>Email</p><input type="text" placeholder="Enter Your Email"><i class="fa-solid fa-envelope"></i>
-    <p>Name</p><input type="text"  placeholder="Enter Your Name"><i class="fa-solid fa-user"></i>
-    <p>Message</p><textarea  id="" placeholder="Enter Your Message"></textarea><i class="fa-solid fa-message"></i>
-    <button>Submit</button>
-</div>
-<div class="icon">
-<i class="fa-solid fa-address-book"></i>
-</div>
-</div>
+                <div class="field message"><p>Message</p><textarea placeholder="Enter Your Mesage"></textarea></div>
+                <div class="field"><input type="submit" value="Submit"> </div>
+
+            </div>
+           
+        </div>
+
 
 </body>
 </html>

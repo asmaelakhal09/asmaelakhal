@@ -13,33 +13,92 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
     <style>
-            .form-group label 
-      {
-        font-size:17px;
-        font-weight:bold;
-      }
-      /* body
-      {
-        background-color:rgb(76, 76, 238) !important;
-      } */
-      .btn
-      {
-        width: 100%;
-        background-color: blue !important;
-      }
-      .btn:hover 
-      {
-        background-color: rgb(135, 135, 241) !important;
-      }
-      .bb
-      {
-        border: none;
-       
-      }
-      .bb span svg 
-      {
-        color: rgb(14, 223, 223);
-      }
+      .nav {
+    width: 95%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-grow: 0.3;
+    height: 57px ;
+}
+.nav .state {
+    height: 57px ;
+
+}
+.nav .state button {
+    width: 120px;
+    height: 35px;
+    font-weight: bold;
+    margin: 0px 7px;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.nav .state button:nth-child(1) {
+  
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+}
+.nav .state button:nth-child(2) {
+  
+    background-color: black;
+    color: white;
+}
+.nav  .logo {
+    padding-bottom:10px
+}
+.nav  .logo img {
+    width: 53px;
+    height: 64px;
+    position:reltive;
+    bottom:5px
+}
+
+
+.nav ul li span {
+    color:black ;
+    font-weight:bold ;
+    width:100%;
+    height:100%
+}
+
+.nav ul li {
+    flex-grow: 0.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: 70px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.nav ul li:hover {
+    background-color: rgb(240, 240, 240) ;
+    color: black;
+    cursor: pointer;
+}
+
+
+.nav .state  button:nth-child(1):hover{
+    background-color: rgb(242, 238, 238);
+    color: black;
+}
     </style>
 
     <!-- Google Web Fonts -->
@@ -71,23 +130,23 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-primary sticky-top p-0 px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="../Site/Logo CRO_0 (1).png" alt="" style="width: 60px;"></h2>
-        </a>
-        <button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.php" class="nav-item nav-link ">Acceuil</a>
-                <a href="contact.php" class="nav-item nav-link">Deconnexion</a>
-                <a href="contact.php" class="nav-item nav-link">Profil</a>
-            </div>
-        </div>
-    </nav> <br>
+    <
+
+<div class="nav">
+    <div class="logo"><img src="./Logo CRO_0 (1).png" alt="Logo"></div>
+    <ul id="nav-menu">
+        <li ><span><a  href="#accueil">Accueil</a></span></li>
+        <li class=""><span><a href="#about">A propos</a></span></li>
+
+        <li class=""><span><a href="#services">Services</a></span></li>
+        
+        <li class=""><span><a href="#contacts">Contacts</a></span></li>
+    </ul>
+    <div class="state">
+        <button><a href="offres.php">offres</a></button>
+        <button><a href="connexion.php">deconnexion</a></button>
+    </div>
+</div>
 
 
     <!-- section -->

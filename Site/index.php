@@ -9,8 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +42,7 @@
         }
         .demarche 
         {
-            background-image:url('img/thumb.jpg');
+            background-image:url('img/20943565.jpg');
             background-size:cover;
             background-attachment:fixed;
         }
@@ -122,6 +121,12 @@
     bottom:5px
 }
 
+.img-fluid {
+    width:200px;
+    height:200px;
+    margin-left:200px;
+    box-shadow:5px 15px 40px 5px gray
+}
 
 .nav ul li span {
     color:black ;
@@ -140,7 +145,7 @@
     padding: 4px;
     width: 70px;
     height: 100%;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 
@@ -181,10 +186,162 @@ ul li span a {
     text-align:center;
     padding:20px
 }
+
+
+/* Styling for the active link */
 .active {
-            color: red; /* Example active state styling */
-            font-weight: bold;
+    color: white !important; /* Change color to your desired active link color */
+    font-weight: bold; 
+    background:gray ;/* Optional: Make active links bold */
+    border-radius:8px
+}
+
+.intro {
+    width:90%;
+    height:700px;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-item:center;
+    margin:auto
+}
+.intro .text {
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:stretch
+}
+.intro img {
+    width:50%;
+    display:flex;
+    
+}
+.content {
+    height:70%
+}
+.intro-description {
+            height:70%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+           display:flex;
+           flex-direction:column;
+           justify-content:space-between
         }
+        .intro-description h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .intro-description p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            
+        }
+        .intro-description p span {
+            padding-left:25px
+        }
+      
+        .intro-description i {
+            margin-right: 10px;
+            color: #007BFF;
+        }
+        .fas {
+            font-size:35px;
+            width:90px
+        }
+        .fa-briefcase {
+            width:117px
+        }
+        .intro-description p :nth-{
+
+        }
+.inscrire {
+    width:180px;
+    height:50px;
+    border-radius:8px;
+    border:0px;
+    display:flex;
+    align-items:center
+}
+
+.inscrire a {
+    text-decoration:none;
+    color:black !important;
+    width:180px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center
+
+}
+  button a {
+    text-decoration:none;
+    color:black !important;
+  }      
+
+  .register a {
+    color:black !important;
+  }
+  .login a {
+    color:white !important;
+  }
+  .offers {
+    height:600px;
+    margin:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between
+  }
+  .offers .cards {
+    height:90%;
+    width:70%;
+    margin:auto;
+    display;flex;
+    justify-content:space-around;
+    align-items:center;
+    display:flex;
+
+  }
+.title-offers {
+
+}
+  .cards .card {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height:95%;
+    width:400px
+  }
+  .card .card-title 
+  {
+    font-weight:bold
+  }
+  .cards .card img {
+    width:80%;
+    height:200px
+  }
+  .cards .card:nth-child(2) img{
+    width:50%;
+    height:200px
+  }
+  .card .text {
+    width:90%;
+    text-align:center
+  }
+  .card .buttons button {
+    width:200px;
+    border:0px;
+    background:black;
+    color:white;
+    height:42px
+  }
+  
     </style>
 
 <body>
@@ -196,62 +353,58 @@ ul li span a {
 
 
     <!-- Navbar Start -->
-   
-    <div class="nav">
-        <div class="logo"><img src="./Logo CRO_0 (1).png" alt=""></div>
-        <ul id="nav-menu">
-            <li><span><a href="#accueil">Accueil</a></span></li>
-            <li><span><a href="#propos">A propos</a></span></li>
-            <li><span><a href="#offers">Offers</a></span></li>
-            <li><span><a href="#contact">Contacts</a></span></li>
-        </ul>
 
-        <div class="state">
-            <button><a href="inscription.php">s'inscrire</a></button>
-            <button>se connecter</button>
-        </div>
+
+
+  
+<div class="nav">
+    <div class="logo"><img src="./Logo CRO_0 (1).png" alt="Logo"></div>
+    <ul id="nav-menu">
+        <li ><span><a  href="#accueil">Accueil</a></span></li>
+        <li class=""><span><a href="#about">A propos</a></span></li>
+
+        <li class=""><span><a href="#services">Services</a></span></li>
+        
+        <li class=""><span><a href="#contacts">Contacts</a></span></li>
+        <li class=""><span><a href="offres.php">offers</a></span></li>
+
+    </ul>
+    <div class="state">
+        <button class="register"><a href="inscription.php">s'inscrire</a></button>
+        <button class="login"><a href="connexion.php">connexion</a></button>
     </div>
+</div>
 
-    <script>
-        // Get all links in the navigation menu
-        const links = document.querySelectorAll('#nav-menu a');
-
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                // Remove active class from all list items
-                links.forEach(link => link.parentElement.parentElement.classList.remove('active'));
-
-                // Add active class to the parent list item of the clicked link
-                this.parentElement.parentElement.classList.add('active');
-
-                // Allow default link behavior
-                // (No need to prevent default behavior here)
-            });
-        });
-    </script>
     <!-- Navbar End -->
 
 
     <!-- Header Start -->
-    <div class="container-fluid hero-header bg-light py-5 mb-5">
-        <div class="container p-4">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <h3 id="welcomeText" class="display-4 mb-3 animated slideInDown b text-light"></h3>
-
-                    <p class="animated slideInDown text-white b">Vous êtes étudiant et vous cherchez une opportunité de stage pour acquérir une expérience professionnelle précieuse ? Que vous soyez en première année d'études ou en fin de cursus, un stage peut vous offrir une expérience pratique inestimable dans votre domaine d'études.</p>
-                </div>
-                <div class="col-lg-6 animated fadeIn">
-                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/removebg-preview.png" height="200" alt="">
-                </div>
-            </div>
-        </div>
+   <div class="intro" id="accueil">
+    <div class="text">
+    <div class="intro-description">
+    <h1>Bienvenue sur Notre Community</h1>
+    <p>
+        <i class="fas fa-briefcase"></i> <span class="first">Nous sommes votre plateforme dédiée à offrir des opportunités exclusives pour les professionnels de l'informatique. 
+        Ici, vous pouvez découvrir des offres d'emploi, des stages et des projets freelance adaptés à vos compétences.</span>
+    </p>
+    <p>
+        <i class="fas fa-bolt"></i>
+        <span > Notre mission est de faciliter le processus de candidature pour vous permettre de trouver rapidement et efficacement des opportunités qui correspondent à vos aspirations professionnelles.</span>
+    </p>
+    <p>
+        <i class="fas fa-search"></i> <span>Explorez les dernières offres, postulez en quelques clics et avancez dans votre carrière avec Note Community. 
+        Nous connectons les talents technologiques avec les entreprises innovantes. Rejoignez-nous et donnez un nouvel élan à votre parcours professionnel.</span>
+    </p>
+    <button class="inscrire"><a href="inscription.php">Veuiller Inscrire</a></button>
+</div>
     </div>
+    <img src="./img/4171344.jpg" alt="">
+   </div>
     <!-- Header End -->
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="about">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -273,11 +426,11 @@ ul li span a {
     <!-- About End -->
 
     <!-- Service Start -->
-    <div class="container-xxl demarche bg-light py-5 my-5">
+    <div class="container-xxl demarche bg-light py-5 my-5" id="services">
         <div class="container py-5">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6 text-white">Démarche</h1>
-                <p class="text-white fs-5 mb-5">Déposer votre dossier de stage sur notre plateforme est simple et rapide ! Suivez les étapes ci-dessous pour soumettre votre candidature :</p>
+            <div class="text-center mx-auto wow fadeInUp bg-white text-dark p-4 mb-3" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6 text-dark">Démarche</h1>
+                <p class="text-dark fs-5 mb-5">Déposer votre dossier de stage sur notre plateforme est simple et rapide ! Suivez les étapes ci-dessous pour soumettre votre candidature :</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -325,8 +478,39 @@ ul li span a {
         </div>
     </div>
     </div>
+    <div class="offers">
+        <div class="title-offers h2">Offres</div>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/javav2.jpeg" alt="">
+                <div class="card-title">Java Developer</div>
+                <div class="text">We need Java Exper Developer that can have Exp +5</div>
+                <div class="buttons">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/Angular.png" alt="">
+                <div class="card-title">Expert Angular  Developer</div>
+                <div class="text">We need Angular developer that can have experience to build web app </div>
+                <div class="buttons">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/NET.png" alt="">
+                <div class="card-title">Java Developer</div>
+                <div class="text">We need .Net developer that can have experience to build web app </div>
+                <div class="buttons">
+                    <button>Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+            <div id="contacts">
+            <?php include('contacts.php') ?>
+            </div>
 
     <script>
 
@@ -367,10 +551,7 @@ var header=document.getElementById('bar');
     <!-- Service End -->
 
 
-        <!--Contacts-->
-        <div id="contact">
-        <?php include 'contacts.php'; ?>
-        </div>
+      
 
 
       <p class="text-center text-dark">© 2023 Conseil Régional de l'Oriental. Tous droits réservés.</p>
@@ -394,6 +575,7 @@ var header=document.getElementById('bar');
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
+    <script src="Js/file.js"></script>
 
+</body>
 </html>

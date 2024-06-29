@@ -211,20 +211,25 @@ button .bi{
 
 </head>
 <body>
-        <!--navbar-->
-<div class="nav">
-    <div class="logo"><img src="./Logo CRO_0 (1).png" alt=""></div>
-    <ul>
-        <li><span><a href="index.php">Accueil</a></span></li>
-        <li><span> <a href="theOffers.php">a propos</a></span></li>
-        <li class="bg-secondary"><span><a href="theOffers.php">offers</a></span></li>
-        <li><span><a href="contacts.php">contacts</a></span></li>
+    <!-- Navbar -->
+
+    <!-- Navbar End -->
+     
+    <div class="nav">
+    <div class="logo"><img src="./Logo CRO_0 (1).png" alt="Logo"></div>
+    <ul id="nav-menu">
+        <li ><span><a  href="#accueil">Accueil</a></span></li>
+        <li class=""><span><a href="#about">A propos</a></span></li>
+
+        <li class=""><span><a href="#services">Services</a></span></li>
+        
+        <li class=""><span><a href="#contacts">Contacts</a></span></li>
+        <li class=""><span><a href="offres.php">offers</a></span></li>
 
     </ul>
-
     <div class="state">
-        <button>s'inscrire</button>
-        <button>se connecter</button>
+        <button class="register"><a href="inscription.php">s'inscrire</a></button>
+        <button class="login"><a href="connexion.php">connexion</a></button>
     </div>
 </div>
 
@@ -235,13 +240,13 @@ button .bi{
         <img src="./img/python.png" alt="">
         <div class="Description">
             <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <p>Nous sommes une societé innovante dans le domaine de l'intelligence artificielle appliquée à la gestion de données massives. Notre mission est d'exploiter les technologies avancées pour transformer la façon dont les entreprises gèrent et utilisent leurs données pour prendre des décisions stratégiques.</p>
            <div class="buttons">
            <button class="postuler btn btn-light">
             <i class="bi bi-file-earmark-plus-fill"></i>
             <span>Postuler</span>
             </button>
-            <button class="postuler btn btn-light">
+            <button class="postuler btn btn-light"  data-toggle="modal" data-target="#exampleModalCenter">
             <i class="bi bi-zoom-in"></i>
             <span>Details</span>
             </button>
@@ -249,10 +254,10 @@ button .bi{
                 </div>
     </div>
     <div class="offer">
-        <img src="./img/java.jpg" alt="">
+        <img src="./img/javav2.jpg" alt="">
         <div class="Description">
             <h5 class="title">Java FullStack Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <p>Nous sommes CRO spécialisée dans le développement de solutions logicielles pour le secteur financier. Notre équipe dynamique travaille sur des projets innovants visant à améliorer l'efficacité et la sécurité des transactions financières mondiales.</p>
             <div class="buttons">
            <button class="postuler  btn btn-light">
             <i class="bi bi-file-earmark-plus-fill"></i>
@@ -270,13 +275,13 @@ button .bi{
         <img src="./img/Angular.png" alt="">
         <div class="Description">
             <h5 class="title">Angular Senior frontend</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <p>Cette offre de stage en développement Angular met en avant les compétences techniques spécifiques requises, les responsabilités du stagiaire et les avantages offerts par l'entreprise, tout en soulignant l'environnement stimulant et collaboratif dans lequel le stagiaire évoluera.</p>
             <div class="buttons">
            <button class="postuler  btn btn-light">
             <i class="bi bi-file-earmark-plus-fill"></i>
             <span>Postuler</span>
             </button>
-            <button class="postuler  btn btn-light">
+            <button class="postuler  btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
             <i class="bi bi-zoom-in"></i>
             <span>Details</span>
             </button>
@@ -284,16 +289,16 @@ button .bi{
         </div>
     </div>
     <div class="offer">
-        <img src="./img/python.png" alt="">
+        <img src="./img/" alt="">
         <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <h5 class="title">PHP Hypertext Preprocessor </h5>
+            <p>Cette offre de stage en développement PHP met en avant les compétences techniques spécifiques requises, les responsabilités du stagiaire et les avantages offerts par l'entreprise, tout en soulignant l'environnement de travail dynamique et l'opportunité de croissance professionnelle au sein d'une agence numérique innovante.</p>
             <div class="buttons">
-           <button class="postuler">
+           <button class="postuler  btn btn-light">
             <i class="bi bi-file-earmark-plus-fill"></i>
             <span>Postuler</span>
             </button>
-            <button class="postuler">
+            <button class="postuler  btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
             <i class="bi bi-zoom-in"></i>
             <span>Details</span>
             </button>
@@ -304,14 +309,32 @@ button .bi{
     <div class="offer">
         <img src="./img/python.png" alt="">
         <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <h5 class="title">Laravel</h5>
+            <p>Cette offre de stage en développement Laravel met en avant les compétences techniques spécifiques requises, les responsabilités du stagiaire et les avantages offerts par l'entreprise, tout en soulignant l'environnement stimulant et l'opportunité de croissance professionnelle au sein de notre societé.</p>
             <div class="buttons">
-           <button class="postuler">
+           <button class="postuler btn btn-light">
             <i class="bi bi-file-earmark-plus-fill"></i>
             <span>Postuler</span>
             </button>
-            <button class="postuler">
+            <button class="postuler  btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="bi bi-zoom-in"></i>
+            <span>Details</span>
+            </button>
+           </div>
+        </div>
+        
+    </div>
+    <div class="offer">
+        <img src="" alt="">
+        <div class="Description">
+            <h5 class="title">jQuery</h5>
+            <p>Cette offre de stage en développement jQuery met en avant les compétences techniques spécifiques requises, les responsabilités du stagiaire et les avantages offerts par l'entreprise, tout en soulignant l'environnement stimulant et innovant d'une startup à Oujda.</p>
+            <div class="buttons">
+           <button class="postuler btn btn-light">
+            <i class="bi bi-file-earmark-plus-fill"></i>
+            <span>Postuler</span>
+            </button>
+            <button class="postuler  btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
             <i class="bi bi-zoom-in"></i>
             <span>Details</span>
             </button>
@@ -322,73 +345,44 @@ button .bi{
     <div class="offer">
         <img src="./img/python.png" alt="">
         <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <h5 class="title">Vue.JS</h5>
+            <p>Cette offre de stage en développement Vue.js met en avant les compétences techniques spécifiques requises, les responsabilités du stagiaire et les avantages offerts par l'entreprise, tout en soulignant l'environnement stimulant et innovant d'une startup à Oujda.</p>
+            <div class="buttons">
+           <button class="postuler btn btn-light">
+            <i class="bi bi-file-earmark-plus-fill"></i>
+            <span>Postuler</span>
+            </button>
+            <button class="postuler  btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="bi bi-zoom-in"></i>
+            <span>Details</span>
+            </button>
+           </div>
         </div>
         
     </div>
     <div class="offer">
         <img src="./img/python.png" alt="">
         <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
+            <h5 class="title">Django</h5>
+            <p>Cette offre de stage en développement Django met en avant les compétences techniques spécifiques requises, les responsabilités du stagiaire et les avantages offerts par l'entreprise, tout en soulignant l'environnement stimulant et l'opportunité de croissance professionnelle au sein de notre entreprise technologique à Oujda.</p>
+            <div class="buttons">
+           <button class="postuler btn btn-light">
+            <i class="bi bi-file-earmark-plus-fill"></i>
+            <span>Postuler</span>
+            </button>
+            <button class="postuler  btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="bi bi-zoom-in"></i>
+            <span>Details</span>
+            </button>
+           </div>
         </div>
         
     </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
+   
+   
         
-    </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
-        
-    </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
-        
-    </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
-        
-    </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
-        
-    </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
-        
-    </div>
-    <div class="offer">
-        <img src="./img/python.png" alt="">
-        <div class="Description">
-            <h5 class="title">Python Senior Developper</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias inventore consequuntur dolorem unde, iste voluptatibus repellendus! Reprehenderit modi voluptatem facere, ducimus libero mollitia tenetur obcaecati nemo eum pariatur nostrum.</p>
-        </div>
+    
+    
         
   
 </div>
